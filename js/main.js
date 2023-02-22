@@ -7,4 +7,8 @@ $(document).ready(function () {
     readOnly: true,
     strokeWidth: 20,
   });
+
+  // slider
+
+  $(".customers-slider").slick();
 });

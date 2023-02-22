@@ -663,7 +663,12 @@ body {
 /* *********** End section vegetable ************* */
 /* *********** section customers ************* */
  /* левый блок */ 
-.customer-wrapper {
+
+.customers{
+  padding: 96px 0 150px 0;
+}
+
+ .customer-wrapper {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
