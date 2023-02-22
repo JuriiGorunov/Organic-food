@@ -236,7 +236,7 @@ body {
   width: 863px;
 }
 
-.link{
+.link {
   padding: 10px 5px;
   position: relative;
   display: flex;
@@ -257,8 +257,8 @@ body {
   -o-transition: 0.3s linear;
 }
 
-.link:hover{
-  box-shadow:inset 0px 0px 10px 0px #0000006f;
+.link:hover {
+  box-shadow: inset 0px 0px 10px 0px #0000006f;
 }
 
 .hero-link {
@@ -521,15 +521,17 @@ body {
   line-height: 30px;
   margin-bottom: 8px;
 }
+
 .service-item__text {
   display: block;
   font-size: 14px;
   line-height: 20px;
   color: var(--color-secondary);
 }
+
 /* стрелочка в низ */
 
-.service-link{
+.service-link {
   display: block;
   position: absolute;
   width: 15px;
@@ -555,7 +557,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom 76px center, right 0 center;
   background-size: 398px, contain;
- 
+
 }
 
 .service-img figure {
@@ -566,67 +568,73 @@ body {
 
 
 /* анимация стрелочки  */
-@keyframes move{
-  0%{
+@keyframes move {
+  0% {
     bottom: 0;
   }
-  50%{
+
+  50% {
     botton: 10px;
   }
+
   /* в орегинале нету 75% */
-  75%{
+  75% {
     bottom: 20px;
   }
-  100%{
+
+  100% {
     bottom: 0;
   }
 }
 
 /* анимируем картинку с права */
 
-@keyframes moveImg{
-  0%{
+@keyframes moveImg {
+  0% {
     transform: translateY(0);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
-}
-  50%{
+  }
+
+  50% {
     transform: translateY(20px);
     -webkit-transform: translateY(20px);
     -moz-transform: translateY(20px);
     -ms-transform: translateY(20px);
     -o-transform: translateY(20px);
-}
+  }
+
   /* в орегинале нету 75%
   75%{
     bottom: 20px;
   } */
-  100%{
+  100% {
     transform: translateY(0);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
+  }
 }
-}
+
 /* ************End section service***************** */
 /* *********** section vegetable ************* */
 
-.vegetable{
+.vegetable {
   background: var(--bg-green-lt-op);
-  
+
 }
 
-.vegetable-inner-wrapper{
+.vegetable-inner-wrapper {
   background-image: url(../images/vegetable/fresh-melientha-suavis.png);
   background-repeat: no-repeat;
   background-position: right 50px bottom;
   background-size: auto;
 }
 
-.vegetable-wrapper{
+.vegetable-wrapper {
   display: flex;
   flex-wrap: wrap;
   padding: 89px 0 149px 0;
@@ -634,22 +642,67 @@ body {
   gap: 50px;
 }
 
-.vegetable-img{
+.vegetable-img {
   width: 600px;
 }
 
-.vegetable-contant{
-  width: 574px; 
+.vegetable-contant {
+  width: 574px;
   padding-top: 30px;
 }
 
-.vegetable-text{
+.vegetable-text {
   margin: 20px 0 50px 0;
 }
 
-.vegetable-link{
+.vegetable-link {
   width: 179px;
   height: 74px;
 }
 
 /* *********** End section vegetable ************* */
+/* *********** section customers ************* */
+ /* левый блок */ 
+.customer-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.customer-content {
+  width: 640px;
+  padding-bottom: 34px;
+}
+
+.customer-text {
+  width: 586px;
+  margin: 30px 0 40px 0;
+}
+
+.customer-name {
+  font-size: 30px;
+  line-height: 36px;
+  display: block;
+  margin-bottom: 20px;
+}
+/* правый блок */
+.customer-img{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: var(--bg-mint-cream);
+}
+/* для звездочек */
+/* https://nashio.github.io/star-rating-svg/demo/ */
+.customer-starts{
+  display: flex;
+  gap: 9px;
+}
+
+/* *********** End section customers ************* */
