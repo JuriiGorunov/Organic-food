@@ -698,6 +698,7 @@ body {
 }
 
 /* правый блок */
+
 .customer-img {
   width: 500px;
   height: 500px;
@@ -707,6 +708,9 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   background: var(--bg-mint-cream);
+  /* добавляем анимацию  */
+  animation: moveImg 2s linear infinite;
+  -webkit-animation: moveImg 2s linear infinite;
 }
 
 /* для звездочек */
@@ -732,14 +736,16 @@ body {
   z-index: 2;
   bottom: 15px;
 }
+
 /* левая стрелка слайдера */
 
-.slider-prev{
+.slider-prev {
   left: 27%;
 }
+
 /* добавление левой иконки */
 
-.slider-prev::before{
+.slider-prev::before {
   content: "";
   display: block;
   width: 12px;
@@ -754,12 +760,13 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
-.slider-prev.active{
+
+.slider-prev.active {
   background: var(--bg-green-lt);
   border: 1px solid var(--bg-green-lt);
 }
 
-.slider-prev.active::before{
+.slider-prev.active::before {
   content: "";
   background: url(../images/customers/icons/vector-left-active.svg)no-repeat center;
   position: absolute;
@@ -767,12 +774,12 @@ body {
 
 /* правая стрелочка */
 
-.slider-next{
+.slider-next {
   left: 34%;
 }
 
 /* добавление правой иконки */
-.slider-next::before{
+.slider-next::before {
   content: "";
   display: block;
   width: 12px;
@@ -787,16 +794,16 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
-.slider-next.active{
+
+.slider-next.active {
   background: var(--bg-green-lt);
   border: 1px solid var(--bg-green-lt);
-  
+
 }
 
-.slider-next.active::before{
+.slider-next.active::before {
   content: "";
   background: url(../images/customers/icons/vector-right-active.svg)no-repeat center;
   position: absolute;
 }
-
 /* *********** End section customers ************* */
