@@ -14,6 +14,7 @@
   --color-secondary: #555;
   --color-black: #000;
   --color-white: #fff;
+  --btn-border: #ccc;
 
   /* ====================background================== */
   --bg-mint-cream: #f3fbf8;
@@ -48,6 +49,7 @@ img {
   border: none;
   outline: none;
   background: transparent;
+  cursor: pointer;
 }
 
 input {
@@ -138,9 +140,10 @@ body {
 
 .search {
   width: 0;
+
 }
 
-.btn {
+.header-btn {
   width: 40px;
   height: 40px;
   background-color: var(--bg-mint-cream);
@@ -197,6 +200,7 @@ body {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
+
 
 /* ************* End header ******************* */
 
@@ -662,13 +666,13 @@ body {
 
 /* *********** End section vegetable ************* */
 /* *********** section customers ************* */
- /* левый блок */ 
+/* левый блок */
 
-.customers{
+.customers {
   padding: 96px 0 150px 0;
 }
 
- .customer-wrapper {
+.customer-wrapper {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -692,8 +696,9 @@ body {
   display: block;
   margin-bottom: 20px;
 }
+
 /* правый блок */
-.customer-img{
+.customer-img {
   width: 500px;
   height: 500px;
   border-radius: 50%;
@@ -703,11 +708,95 @@ body {
   -o-border-radius: 50%;
   background: var(--bg-mint-cream);
 }
+
 /* для звездочек */
 /* https://nashio.github.io/star-rating-svg/demo/ */
-.customer-starts{
+.customer-starts {
   display: flex;
   gap: 9px;
+}
+
+/* background стрелочек */
+
+.slider-btn {
+  width: 56px;
+  height: 56px;
+  background: var(--bg-white);
+  border: 1px solid var(--btn-border);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  bottom: 15px;
+}
+/* левая стрелка слайдера */
+
+.slider-prev{
+  left: 27%;
+}
+/* добавление левой иконки */
+
+.slider-prev::before{
+  content: "";
+  display: block;
+  width: 12px;
+  height: 18px;
+  background: url(../images/customers/icons/vector-left.svg)no-repeat center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.slider-prev.active{
+  background: var(--bg-green-lt);
+  border: 1px solid var(--bg-green-lt);
+}
+
+.slider-prev.active::before{
+  content: "";
+  background: url(../images/customers/icons/vector-left-active.svg)no-repeat center;
+  position: absolute;
+}
+
+/* правая стрелочка */
+
+.slider-next{
+  left: 34%;
+}
+
+/* добавление правой иконки */
+.slider-next::before{
+  content: "";
+  display: block;
+  width: 12px;
+  height: 18px;
+  background: url(../images/customers/icons/vector-right.svg)no-repeat center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.slider-next.active{
+  background: var(--bg-green-lt);
+  border: 1px solid var(--bg-green-lt);
+  
+}
+
+.slider-next.active::before{
+  content: "";
+  background: url(../images/customers/icons/vector-right-active.svg)no-repeat center;
+  position: absolute;
 }
 
 /* *********** End section customers ************* */
