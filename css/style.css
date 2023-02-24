@@ -13,6 +13,7 @@
   --color-primary: #222;
   --color-secondary: #555;
   --color-black: #000;
+  --color-darck: #333;
   --color-white: #fff;
   --btn-border: #ccc;
 
@@ -806,4 +807,152 @@ body {
   background: url(../images/customers/icons/vector-right-active.svg)no-repeat center;
   position: absolute;
 }
+
 /* *********** End section customers ************* */
+
+/* *********** End section app ************* */
+
+.app {
+  padding-bottom: 140px;
+}
+
+.app-wrapper {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* левый блок */
+
+.app-img {
+  width: 265px;
+  /* добавляем анимацию */
+  animation: moveImg 2s linear infinite;
+  -webkit-animation: moveImg 2s linear infinite;
+}
+
+/* правый блок */
+
+.app-content {
+  width: 663px;
+}
+
+.app-subtitle {
+  display: block;
+  width: 170px;
+  padding: 11px 0;
+  text-align: center;
+  /*стили для рамки*/
+  background: var(--bg-mint-cream);
+  border-radius: 50px;
+  /* текст */
+  color: var(--color-darck);
+  /* отступы */
+  margin-bottom: 27px;
+}
+
+/* параграф */
+
+.app-text {
+  /* ширина */
+  width: 574px;
+  /* отступы */
+  margin: 20px 0 50px 0;
+}
+
+/* app блок */
+
+.app-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* отступы между ними */
+  gap: 24px;
+}
+
+.app-link {
+  /*ширинаплашки*/width: 104px;
+  /*граница*/border: 1px solid #a6a6a6;
+  /*скруглениеуглов*/border-radius: 5px;
+  /*внутренниеотступы*/padding: 5px 0;
+  color: var(--bg-white);
+  display: block;
+  /*плавностьдляховерэфекта*/transition:0.3s linear;
+  -webkit-transition:0.3s linear ;
+  -moz-transition:0.3s linear ;
+  -ms-transition: 0.3s linear;
+  -o-transition:0.3s linear ;
+}
+/* общие настройки завершены */
+
+/* hover эфект для appStore и GooglePlay */
+.app-link:hover{
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.35);
+  transform: skew(10deg,0deg);
+  -webkit-transform: skew(10deg,0deg);
+  -moz-transform: skew(10deg,0deg);
+  -ms-transform: skew(10deg,0deg);
+  -o-transform: skew(10deg,0deg);
+}
+
+/* картинка яблоко */
+.app-store {
+  background: var(--color-black) url(../images/section.app/icons/aple.svg) no-repeat left 12px center;
+  /* стили appstore */
+  font-size: 12px;
+  /* насышенность текста жирный  */
+  font-weight: 500;
+  /* высота строки */
+  line-height: 12px;
+  /* отступ с лева */
+  padding-left: 34px;
+  /* меж строчный интервал */
+  letter-spacing: 0.7px;
+}
+
+/* Download on the */
+.app-store span {
+  display: block;
+  margin-bottom: 3px;
+  /* размер шрифта */
+  font-size: 6px;
+  /* высота строки */
+  line-height: 7px;
+  /* меж строчный интервал */
+  letter-spacing: 0.7px;
+
+}
+
+/* картинка googlePlay */
+.google-play {
+  background: var(--color-black) url(../images/section.app/icons/google.svg) no-repeat left 8px center;
+  /* стили appstore */
+  font-size: 11px;
+  /* насышенность текста жирный  */
+  font-weight: 500;
+  /* высота строки */
+  line-height: 12px;
+  /* меж строчный интервал */
+  letter-spacing: 0.7px;
+  /* отступ с лева */
+  padding-left: 32px;
+}
+
+/* спан */
+.google-play span {
+  display: block;
+  margin-bottom: 3px;
+  /* размер шрифта */
+  font-size: 6px;
+  /* высота строки */
+  line-height: 7px;
+  /* заглавные буквы */
+  text-transform: uppercase;
+   /* меж строчный интервал */
+   letter-spacing: 0.7px;
+}
+
+
+/* *********** End section app ************* */
